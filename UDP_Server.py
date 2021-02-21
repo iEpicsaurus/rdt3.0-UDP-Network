@@ -6,8 +6,8 @@ import hashlib
 import random
 import time
 
-# THIS SECTION DEALS WITH FUNCTIONS TO MIMIC CORRUPTION, LOSS, AND DELAYS
-# Code provided by the Professor (including code for building the checksum)
+# THIS SECTION SIMULATES CORRUPTION, LOSS, AND DELAYS IN THE NETWORK.
+# Base code in functions were provided by the professor and modified to fit needs of the program.
 def Network_Delay():
     if False and random.choice([0,1,0]) == 1: # Set to False to disable Network Delay. Default is 33% packets are delayed
         time.sleep(.01)
