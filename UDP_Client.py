@@ -4,7 +4,7 @@ import struct
 import sys
 import hashlib
 
-# Code provided by professor on how to build a checksum
+# Code in this function was provided by professor on how to build a checksum
 def buildACKChecksum(ACK, valueOfSeq, data):
     values = (ACK, valueOfSeq, data)
     packer = struct.Struct('I I 8s')
